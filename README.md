@@ -8,7 +8,10 @@ images.
 
 ## Getting started
 
-    git clone YOUR_GITHUB_REPOSITORY_URL
+Fork the repository on github by pressing the "Fork" button on the top
+right and follow instructions there. Then:
+
+    git clone https://github.com/YOUR_GITHUB_USERNAME/number2.git
     cd number2
     bundle install
     rake db:migrate
