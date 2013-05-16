@@ -1,5 +1,7 @@
 class Place < ActiveRecord::Base
-  attr_accessible :address, :name, :zip
+  attr_accessible :address, :name, :zip, :picture
+
+  mount_uploader :picture, PictureUploader
 
   validates :address, :name, :presence => true
 
