@@ -2,8 +2,7 @@
 $bodyBackground: $grayLighter;
 $btnPrimaryBackground: #f00;
 $navbarBackground: $blue;
-$navbarText: $white;
-
+@import "bootstrap";
 
 body {
   padding-top: 60px;
