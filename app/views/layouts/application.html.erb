@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Number2</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Esteban' rel='stylesheet' type='text/css'>
+    <title>Number2</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
 
-<%= yield %>
+    <nav class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container"><a class="brand" href="/">number2</a>
+          <ul class="nav">
+            <li class="active"><a href="/places">places</a></li>
+            <li><a href="/">bla</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-</body>
+    <div class="container"><%= yield %></div>
+
+    <footer class="footer">
+      <div class="container">Tuesdays group 2013</div>
+    </footer>
+
+  </body>
 </html>
