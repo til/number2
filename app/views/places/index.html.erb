@@ -25,6 +25,10 @@
 <% end %>
 </table>
 
+<br/>
+<%= gmaps4rails(@pins) %>
+<%= yield :scripts %>
+
 <br />
 
 <%= link_to 'New Place', new_place_path %>

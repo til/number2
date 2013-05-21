@@ -24,3 +24,6 @@ gem 'jquery-rails'
 
 # OUR OWN GEMS
 gem 'carrierwave'
+
+gem 'geocoder'
+gem 'gmaps4rails'
