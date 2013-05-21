@@ -1,6 +1,6 @@
 <h1>Listing places</h1>
 
-<table>
+<table class="table table-striped">
   <tr>
     <th>Name</th>
     <th>Address</th>
@@ -23,8 +23,8 @@
     <td><%= truncate(place.comment, :length => 25, :separator => ' ') if place.comment.present? %></td>
     <td><%= image_tag(place.picture_url, :width => 60) if place.picture.present? %></td>
     <td><%= link_to 'Show', place %></td>
-    <td><%= link_to 'Edit', edit_place_path(place) %></td>
-    <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Edit', edit_place_path(place), class: 'btn' %></td>
+    <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
   </tr>
 <% end %>
 </table>

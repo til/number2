@@ -29,3 +29,5 @@ gem 'geocoder'
 gem 'gmaps4rails'
 
 gem 'carmen-rails', '~> 1.0.0'
+
+gem 'bootstrap-sass'
