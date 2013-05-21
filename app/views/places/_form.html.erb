@@ -24,8 +24,16 @@
     <%= f.text_field :zip %>
   </div>
   <div class="field">
+    <%= f.label :country %><br />
+    <%= f.country_select :country, :priority => ['DE', 'AT', 'CA'], :prompt => 'Please select a country' %>
+  </div>
+  <div class="field">
     <%= f.label :picture %><br />
     <%= f.file_field :picture %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br />
+    <%= f.text_area :comment %>
   </div>
   <div class="actions">
     <%= f.submit %>

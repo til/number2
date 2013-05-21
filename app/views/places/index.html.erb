@@ -5,6 +5,8 @@
     <th>Name</th>
     <th>Address</th>
     <th>Zip</th>
+    <th>Country</th>
+    <th>Comment</th>
     <th>Picture</th>
     <th></th>
     <th></th>
@@ -17,6 +19,8 @@
     <td><%= place.address %></td>
     <td><%= place.zip %></td>
     <!-- Das ist ein Kommentar -->
+    <td><%= place.country %></td>
+    <td><%= truncate(place.comment, :length => 25, :separator => ' ') if place.comment.present? %></td>
     <td><%= image_tag(place.picture_url, :width => 60) if place.picture.present? %></td>
     <td><%= link_to 'Show', place %></td>
     <td><%= link_to 'Edit', edit_place_path(place) %></td>

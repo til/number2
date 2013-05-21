@@ -27,3 +27,5 @@ gem 'carrierwave'
 
 gem 'geocoder'
 gem 'gmaps4rails'
+
+gem 'carmen-rails', '~> 1.0.0'

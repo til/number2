@@ -1,5 +1,6 @@
 class Place < ActiveRecord::Base
-  attr_accessible :address, :name, :zip, :picture
+  attr_accessible :address, :name, :zip, :picture,
+                  :country, :comment
 
   mount_uploader :picture, PictureUploader
 
@@ -15,5 +16,9 @@ class Place < ActiveRecord::Base
 
   def full_address
     address + " " + zip
+  end
+
+  def silly_comment
+    full_address.reverse
   end
 end

@@ -15,8 +15,17 @@
   <%= @place.zip %>
 </p>
 
+<p>
+  <b>Country:</b>
+  <%= @place.country %>
+</p>
+
 <%= image_tag(@place.picture_url, :width => 600) if @place.picture.present? %>
 
+<p>
+  <b>Comment:</b>
+  <%= @place.comment %>
+</p>
 
 <%= link_to 'Edit', edit_place_path(@place) %> |
 <%= link_to 'Back', places_path %>

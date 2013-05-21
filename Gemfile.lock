@@ -30,6 +30,11 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.2)
     builder (3.0.4)
+    carmen (1.0.0)
+      unicode_utils (~> 1.4.0)
+    carmen-rails (1.0.0)
+      carmen (~> 1.0.0.beta2)
+      rails
     carrierwave (0.8.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -104,11 +109,13 @@ GEM
     uglifier (2.0.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
+    unicode_utils (1.4.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  carmen-rails (~> 1.0.0)
   carrierwave
   coffee-rails (~> 3.2.1)
   geocoder
